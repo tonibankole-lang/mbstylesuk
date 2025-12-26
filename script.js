@@ -13,5 +13,22 @@ window.addEventListener("scroll", () => {
       section.style.transform = "translateY(0)";
       section.style.transition = "0.8s ease";
     }
+    function goToPayPal(event) {
+  event.preventDefault();
+
+  const style = document.getElementById("style").value;
+
+  if (!style) {
+    alert("Please select a hairstyle first.");
+    return;
+  }
+
+  const paypalLink = "https://www.paypal.com/paypalme/YOURPAYPALLINK/20";
+
+  const note = encodeURIComponent("Hairstyle selected: " + style);
+
+  window.location.href = paypalLink + "?note=" + note;
+}
+
   });
 });

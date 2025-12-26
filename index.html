@@ -138,6 +138,23 @@
   <!-- STICKY MOBILE BUTTON -->
   <a href="https://instagram.com/MBstylesUK" class="sticky-book">Book Now</a>
 
+  <form class="booking-form" onsubmit="goToPayPal(event)">
+  <label for="style">Select Your Hairstyle</label>
+
+  <select id="style" required>
+    <option value="">Choose a style</option>
+    <option value="Cornrows">Cornrows</option>
+    <option value="Two Strand Twists">Two Strand Twists</option>
+    <option value="Retwists">Retwists</option>
+    <option value="Interlocking">Interlocking</option>
+    <option value="Barrels">Barrels</option>
+  </select>
+
+  <button type="submit" class="btn gold">
+    Pay Deposit
+  </button>
+</form>
+
   <script src="script.js"></script>
 </body>
 </html>
