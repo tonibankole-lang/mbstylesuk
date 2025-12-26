@@ -1,0 +1,237 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: #0f0f0f;
+  color: #f5e6d3;
+}
+
+/* HERO */
+.hero {
+  height: 100vh;
+  background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+    url('heroimage.png') center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-content {
+  text-align: center;
+  padding: 0 5%;
+}
+
+.hero h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 4rem;
+}
+
+.tagline {
+  margin-top: 15px;
+  font-size: 1.1rem;
+}
+
+.intro {
+  max-width: 650px;
+  margin: 25px auto 30px;
+  font-size: 0.95rem;
+  line-height: 1.7;
+  color: rgba(245,230,211,0.85);
+}
+
+/* BUTTONS */
+.btn {
+  border: 1px solid #c9a24d;
+  padding: 14px 40px;
+  text-decoration: none;
+  color: #c9a24d;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background: #c9a24d;
+  color: #0f0f0f;
+  box-shadow: 0 0 20px #c9a24d;
+}
+
+.gold {
+  background: #c9a24d;
+  color: #0f0f0f;
+}
+
+/* SECTIONS */
+section {
+  padding: 80px 10%;
+  text-align: center;
+}
+
+h2 {
+  font-family: 'Playfair Display', serif;
+  margin-bottom: 40px;
+}
+
+/* SERVICES */
+.service-cards {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+}
+
+.card {
+  border: 1px solid #c9a24d;
+  padding: 30px;
+  width: 250px;
+}
+
+.card span {
+  display: block;
+  margin-top: 15px;
+  color: #c9a24d;
+}
+
+/* PRICE LIST */
+.price-wrapper {
+  display: flex;
+  gap: 40px;
+  justify-content: center;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.price-box {
+  border: 1px solid #c9a24d;
+  padding: 30px;
+  max-width: 450px;
+  width: 100%;
+}
+
+.price-box h3 {
+  font-family: 'Playfair Display', serif;
+  color: #c9a24d;
+  margin-bottom: 25px;
+}
+
+.price-box ul {
+  list-style: none;
+}
+
+.price-box li {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0;
+  border-bottom: 1px solid rgba(201,162,77,0.3);
+}
+
+.price-box li span:last-child {
+  color: #c9a24d;
+}
+
+/* GALLERY */
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  max-width: 900px;
+  margin: auto;
+}
+
+.img-box {
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.img-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: 0.4s;
+}
+
+.img-box:hover img {
+  transform: scale(1.1);
+}
+
+.overlay {
+  position: absolute;
+  bottom: 0;
+  background: rgba(0,0,0,0.6);
+  width: 100%;
+  padding: 10px;
+  opacity: 0;
+  transition: 0.4s;
+}
+
+.img-box:hover .overlay {
+  opacity: 1;
+}
+
+/* TESTIMONIALS */
+.testimonial-cards {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+}
+
+.testimonial {
+  border: 1px solid #c9a24d;
+  padding: 30px;
+  width: 250px;
+  font-style: italic;
+}
+
+.testimonial span {
+  display: block;
+  margin-top: 15px;
+  color: #c9a24d;
+}
+
+/* BOOKING */
+.booking p {
+  margin-bottom: 30px;
+}
+
+/* STICKY MOBILE BUTTON */
+.sticky-book {
+  display: none;
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 2.5rem;
+  }
+
+  .intro {
+    font-size: 0.9rem;
+  }
+
+  .service-cards,
+  .testimonial-cards,
+  .price-wrapper {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .gallery-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .sticky-book {
+    display: block;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #c9a24d;
+    color: #0f0f0f;
+    padding: 15px 25px;
+    border-radius: 30px;
+    text-decoration: none;
+    box-shadow: 0 0 15px #c9a24d;
+    z-index: 999;
+  }
+}
