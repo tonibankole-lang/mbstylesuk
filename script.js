@@ -23,8 +23,8 @@ window.addEventListener("scroll", () => {
     return;
   }
 function payDeposit(style) {
-  const paypalLink = "https://www.paypal.me/MBstylesUK/20"; // REPLACE with your real PayPal.Me link
-  const note = encodeURIComponent("Hairstyle selected: " + style);
+  const paypalLink = "https://www.paypal.me/MBstylesUK/20";
+  const note = encodeURIComponent("Style booked: " + style);
   window.location.href = paypalLink + "?note=" + note;
 }
     }

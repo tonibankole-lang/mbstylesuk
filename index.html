@@ -9,145 +9,129 @@
 </head>
 <body>
 
-  <!-- HERO -->
-  <section class="hero">
-    <div class="hero-content">
-      <h1>MBstylesUK</h1>
-      <p class="tagline">Luxury installs. Flawless finishes.</p>
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-content">
+    <h1>MBstylesUK</h1>
+    <p class="tagline">Luxury installs. Flawless finishes.</p>
+    <p class="intro">
+      MBstylesUK specialises in braids over locs, natural hairstyles,
+      loc maintenance and protective styling. All styles are neat,
+      long-lasting and tailored to each client.
+    </p>
+  </div>
+</section>
 
-      <p class="intro">
-        MBstylesUK is a luxury hair styling brand specialising in braids,
-        cornrows, twists, retwists, barrels, and natural protective styles.
-        Every style is neat, long-lasting, and tailored to you.
-      </p>
+<!-- SERVICES (UNCHANGED) -->
+<section class="services">
+  <h2>Services</h2>
+  <div class="service-cards">
+    <div class="card"><h3>Barrels</h3><p>Clean and structured barrel styles.</p></div>
+    <div class="card"><h3>Retwists</h3><p>Healthy, neat loc maintenance.</p></div>
+    <div class="card"><h3>Cornrows</h3><p>Precision cornrow styles.</p></div>
+  </div>
+</section>
+
+<!-- FULL PRICE LIST -->
+<section class="prices">
+  <h2>Price List — Click a Style to Pay Deposit</h2>
+
+  <!-- BRAIDS OVER LARGE LOCS -->
+  <div class="price-box">
+    <h3>Braids Over Large Locs (Under 60 locs)</h3>
+
+    <h4>Large Braids</h4>
+    <div class="price-item" onclick="payDeposit('Large braids shoulder £70')"><span>Shoulder length</span><strong>£70</strong></div>
+    <div class="price-item" onclick="payDeposit('Large braids mid back £75')"><span>Mid back length</span><strong>£75</strong></div>
+    <div class="price-item" onclick="payDeposit('Large braids waist £85')"><span>Waist length</span><strong>£85</strong></div>
+    <div class="price-item" onclick="payDeposit('Large braids bum £95')"><span>Bum length</span><strong>£95</strong></div>
+
+    <p class="addon">Goddess curls +£10 · Boho curls +£10</p>
+  </div>
+
+  <!-- BRAIDS OVER SMALL LOCS -->
+  <div class="price-box">
+    <h3>Braids Over Small Locs (100+ locs)</h3>
+
+    <h4>Smedium Braids</h4>
+    <div class="price-item" onclick="payDeposit('Smedium braids shoulder £110')"><span>Shoulder length</span><strong>£110</strong></div>
+    <div class="price-item" onclick="payDeposit('Smedium braids mid back £115')"><span>Mid back length</span><strong>£115</strong></div>
+    <div class="price-item" onclick="payDeposit('Smedium braids waist £125')"><span>Waist length</span><strong>£125</strong></div>
+    <div class="price-item" onclick="payDeposit('Smedium braids bum £140')"><span>Bum length</span><strong>£140</strong></div>
+
+    <h4>Medium Braids</h4>
+    <div class="price-item" onclick="payDeposit('Medium braids shoulder £95')"><span>Shoulder length</span><strong>£95</strong></div>
+    <div class="price-item" onclick="payDeposit('Medium braids mid back £105')"><span>Mid back length</span><strong>£105</strong></div>
+    <div class="price-item" onclick="payDeposit('Medium braids waist £120')"><span>Waist length</span><strong>£120</strong></div>
+    <div class="price-item" onclick="payDeposit('Medium braids bum £130')"><span>Bum length</span><strong>£130</strong></div>
+
+    <h4>Large Braids</h4>
+    <div class="price-item" onclick="payDeposit('Large braids mid back £85')"><span>Mid back length</span><strong>£85</strong></div>
+    <div class="price-item" onclick="payDeposit('Large braids waist £105')"><span>Waist length</span><strong>£105</strong></div>
+    <div class="price-item" onclick="payDeposit('Large braids bum £115')"><span>Bum length</span><strong>£115</strong></div>
+
+    <p class="addon">Goddess curls +£10 · Boho curls +£20</p>
+  </div>
+
+  <!-- MORE NATURAL HAIRSTYLES -->
+  <div class="price-box">
+    <h3>More Natural Hairstyles</h3>
+    <div class="price-item" onclick="payDeposit('2 stitch braids £20')"><span>2 Stitch braids</span><strong>£20</strong></div>
+    <div class="price-item" onclick="payDeposit('4 stitch braids £25')"><span>4 Stitch braids</span><strong>£25</strong></div>
+    <div class="price-item" onclick="payDeposit('6 stitch braids £30')"><span>6 Stitch braids</span><strong>£30</strong></div>
+    <div class="price-item" onclick="payDeposit('8 stitch braids £35')"><span>8 Stitch braids</span><strong>£35</strong></div>
+    <div class="price-item" onclick="payDeposit('10–12 stitch braids £40')"><span>10–12 Stitch braids</span><strong>£40</strong></div>
+    <div class="price-item" onclick="payDeposit('Cornrows into twist £35–£40')">
+      <span>Cornrows into twist</span><strong>£35–£40</strong>
     </div>
-  </section>
+  </div>
 
-  <!-- SERVICES -->
-  <section class="services">
-    <h2>Services</h2>
+  <!-- LOCS -->
+  <div class="price-box">
+    <h3>Locs</h3>
 
-    <div class="service-cards">
-      <div class="card">
-        <h3>Barrels</h3>
-        <p>Clean, structured barrel styles with a flawless finish.</p>
-      </div>
+    <h4>Retwist (Traditional)</h4>
+    <div class="price-item" onclick="payDeposit('Retwist under 80 £35')"><span>Under 80 locs</span><strong>£35</strong></div>
+    <div class="price-item" onclick="payDeposit('Retwist 80–100 £40')"><span>80–100 locs</span><strong>£40</strong></div>
+    <div class="price-item" onclick="payDeposit('Retwist over 100 £45')"><span>Over 100 locs</span><strong>£45</strong></div>
 
-      <div class="card">
-        <h3>Retwists</h3>
-        <p>Neat retwists focused on scalp health and growth.</p>
-      </div>
+    <h4>Interlocking</h4>
+    <div class="price-item" onclick="payDeposit('Interlocking under 80 £45')"><span>Under 80 locs</span><strong>£45</strong></div>
+    <div class="price-item" onclick="payDeposit('Interlocking 80–100 £55')"><span>80–100 locs</span><strong>£55</strong></div>
+    <div class="price-item" onclick="payDeposit('Interlocking over 100 £60')"><span>Over 100 locs</span><strong>£60</strong></div>
 
-      <div class="card">
-        <h3>Cornrows</h3>
-        <p>Precision cornrows styled to suit your look.</p>
-      </div>
-    </div>
-  </section>
+    <h4>Starter Locs</h4>
+    <div class="price-item" onclick="payDeposit('Starter locs from £45')"><span>Starting from</span><strong>£45</strong></div>
 
-  <!-- PRICE LIST / CLICK TO PAY -->
-  <section class="prices">
-    <h2>Click a Hairstyle to Pay Deposit</h2>
+    <h4>Non-Loc Styles</h4>
+    <div class="price-item" onclick="payDeposit('Singles £40')"><span>Singles</span><strong>£40</strong></div>
+    <div class="price-item" onclick="payDeposit('Two strand twists £40')"><span>Two strand twists</span><strong>£40</strong></div>
 
-    <div class="price-wrapper">
+    <h4>Barrel Styles</h4>
+    <div class="price-item" onclick="payDeposit('4–6 barrels £40')"><span>4–6 barrels</span><strong>£40</strong></div>
+    <div class="price-item" onclick="payDeposit('Barrels into twists £40')"><span>Barrels into twists</span><strong>£40</strong></div>
+  </div>
+</section>
 
-      <!-- GIRLS HAIRSTYLES -->
-      <div class="price-box">
-        <h3>Girls Hairstyles</h3>
+<!-- GALLERY (UNCHANGED) -->
+<section class="gallery">
+  <h2>Our Work</h2>
+  <div class="gallery-grid">
+    <img src="galleryimage.jpg" alt="Hair style">
+    <img src="galleryimage2.jpg" alt="Hair style">
+  </div>
+</section>
 
-        <div class="price-item" onclick="payDeposit('Braids (Under Medium) – £95')">
-          <span>Braids (Under Medium)</span><strong>£95</strong>
-        </div>
+<!-- TESTIMONIALS (UNCHANGED) -->
+<section class="testimonials">
+  <h2>Client Love</h2>
+  <div class="testimonial-cards">
+    <div class="testimonial">“Always neat and professional.”</div>
+    <div class="testimonial">“Best loc stylist I’ve been to.”</div>
+    <div class="testimonial">“Attention to detail every time.”</div>
+  </div>
+</section>
 
-        <div class="price-item" onclick="payDeposit('Braids (Medium) – £105')">
-          <span>Braids (Medium)</span><strong>£105</strong>
-        </div>
-
-        <div class="price-item" onclick="payDeposit('Braids (Large) – £115')">
-          <span>Braids (Large)</span><strong>£115</strong>
-        </div>
-
-        <div class="price-item" onclick="payDeposit('Mid Back Length – £10')">
-          <span>Mid Back Length</span><strong>£10</strong>
-        </div>
-
-        <div class="price-item" onclick="payDeposit('Waist Length – £20')">
-          <span>Waist Length</span><strong>£20</strong>
-        </div>
-
-        <div class="price-item" onclick="payDeposit('Bum Length – £30')">
-          <span>Bum Length</span><strong>£30</strong>
-        </div>
-      </div>
-
-      <!-- NATURAL HAIRSTYLES -->
-      <div class="price-box">
-        <h3>Natural Hairstyles</h3>
-
-        <div class="price-item" onclick="payDeposit('Cornrows – £30')">
-          <span>Cornrows</span><strong>£30</strong>
-        </div>
-
-        <div class="price-item" onclick="payDeposit('Two Strand Twists – £40')">
-          <span>Two Strand Twists</span><strong>£40</strong>
-        </div>
-
-        <div class="price-item" onclick="payDeposit('Twists – £35')">
-          <span>Twists</span><strong>£35</strong>
-        </div>
-
-        <div class="price-item" onclick="payDeposit('Retwists – £35')">
-          <span>Retwists</span><strong>£35</strong>
-        </div>
-
-        <div class="price-item" onclick="payDeposit('Interlocking – £45')">
-          <span>Interlocking</span><strong>£45</strong>
-        </div>
-
-        <div class="price-item" onclick="payDeposit('Barrels – £40')">
-          <span>Barrels</span><strong>£40</strong>
-        </div>
-      </div>
-
-    </div>
-  </section>
-
-  <!-- GALLERY -->
-  <section class="gallery">
-    <h2>Our Work</h2>
-
-    <div class="gallery-grid">
-      <div class="img-box">
-        <img src="galleryimage.jpg" alt="Hair style">
-        <div class="overlay">Precision Styling</div>
-      </div>
-
-      <div class="img-box">
-        <img src="galleryimage2.jpg" alt="Hair style">
-        <div class="overlay">Clean Finish</div>
-      </div>
-    </div>
-  </section>
-
-  <!-- TESTIMONIALS -->
-  <section class="testimonials">
-    <h2>Client Love</h2>
-
-    <div class="testimonial-cards">
-      <div class="testimonial">
-        “Always neat, always professional. Best stylist I’ve been to.”
-      </div>
-
-      <div class="testimonial">
-        “My go-to for retwists and cornrows. Highly recommend.”
-      </div>
-
-      <div class="testimonial">
-        “Attention to detail is unmatched every single time.”
-      </div>
-    </div>
-  </section>
-
-  <script src="script.js"></script>
+<script src="script.js"></script>
 </body>
 </html>
