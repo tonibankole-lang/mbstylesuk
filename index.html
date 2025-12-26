@@ -4,9 +4,7 @@
   <meta charset="UTF-8">
   <title>MBstylesUK | Luxury Hair Styling</title>
 
-  <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
-
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -15,74 +13,100 @@
   <section class="hero">
     <div class="hero-content">
       <h1>MBstylesUK</h1>
-
-      <p class="tagline">Luxury Hairstyles. Flawless finishes.</p>
+      <p class="tagline">Luxury installs. Flawless finishes.</p>
 
       <p class="intro">
         MBstylesUK is a luxury hair styling brand specialising in braids,
-        cornrows, twists, retwists, barrels, and protective styles. We focus on
-        precision, quality, and healthy hair, delivering neat, long-lasting
-        styles tailored to each client.
+        cornrows, twists, retwists, barrels, and natural protective styles.
+        Every style is neat, long-lasting, and tailored to you.
       </p>
-
-      <a href="#booking" class="btn gold">Book Now</a>
     </div>
   </section>
 
   <!-- SERVICES -->
   <section class="services">
     <h2>Services</h2>
+
     <div class="service-cards">
       <div class="card">
         <h3>Barrels</h3>
         <p>Clean, structured barrel styles with a flawless finish.</p>
-        <span>From £40</span>
       </div>
 
       <div class="card">
         <h3>Retwists</h3>
         <p>Neat retwists focused on scalp health and growth.</p>
-        <span>From £45</span>
       </div>
 
       <div class="card">
         <h3>Cornrows</h3>
         <p>Precision cornrows styled to suit your look.</p>
-        <span>From £35</span>
       </div>
     </div>
   </section>
 
-  <!-- PRICE LIST -->
+  <!-- PRICE LIST / CLICK TO PAY -->
   <section class="prices">
-    <h2>Price List</h2>
+    <h2>Click a Hairstyle to Pay Deposit</h2>
 
     <div class="price-wrapper">
 
       <!-- GIRLS HAIRSTYLES -->
       <div class="price-box">
         <h3>Girls Hairstyles</h3>
-        <ul>
-          <li><span>Braids (Under Medium)</span><span>£95</span></li>
-          <li><span>Braids (Medium)</span><span>£105</span></li>
-          <li><span>Braids (Large)</span><span>£115</span></li>
-          <li><span>Mid Back Length</span><span>+£10</span></li>
-          <li><span>Waist Length</span><span>+£20</span></li>
-          <li><span>Bum Length</span><span>+£30</span></li>
-        </ul>
+
+        <div class="price-item" onclick="payDeposit('Braids (Under Medium) – £95')">
+          <span>Braids (Under Medium)</span><strong>£95</strong>
+        </div>
+
+        <div class="price-item" onclick="payDeposit('Braids (Medium) – £105')">
+          <span>Braids (Medium)</span><strong>£105</strong>
+        </div>
+
+        <div class="price-item" onclick="payDeposit('Braids (Large) – £115')">
+          <span>Braids (Large)</span><strong>£115</strong>
+        </div>
+
+        <div class="price-item" onclick="payDeposit('Mid Back Length – £10')">
+          <span>Mid Back Length</span><strong>£10</strong>
+        </div>
+
+        <div class="price-item" onclick="payDeposit('Waist Length – £20')">
+          <span>Waist Length</span><strong>£20</strong>
+        </div>
+
+        <div class="price-item" onclick="payDeposit('Bum Length – £30')">
+          <span>Bum Length</span><strong>£30</strong>
+        </div>
       </div>
 
       <!-- NATURAL HAIRSTYLES -->
       <div class="price-box">
         <h3>Natural Hairstyles</h3>
-        <ul>
-          <li><span>Cornrows</span><span>From £30</span></li>
-          <li><span>Two Strand Twists</span><span>From £40</span></li>
-          <li><span>Twists</span><span>From £35</span></li>
-          <li><span>Retwists</span><span>From £35</span></li>
-          <li><span>Interlocking</span><span>From £45</span></li>
-          <li><span>Barrels</span><span>From £40</span></li>
-        </ul>
+
+        <div class="price-item" onclick="payDeposit('Cornrows – £30')">
+          <span>Cornrows</span><strong>£30</strong>
+        </div>
+
+        <div class="price-item" onclick="payDeposit('Two Strand Twists – £40')">
+          <span>Two Strand Twists</span><strong>£40</strong>
+        </div>
+
+        <div class="price-item" onclick="payDeposit('Twists – £35')">
+          <span>Twists</span><strong>£35</strong>
+        </div>
+
+        <div class="price-item" onclick="payDeposit('Retwists – £35')">
+          <span>Retwists</span><strong>£35</strong>
+        </div>
+
+        <div class="price-item" onclick="payDeposit('Interlocking – £45')">
+          <span>Interlocking</span><strong>£45</strong>
+        </div>
+
+        <div class="price-item" onclick="payDeposit('Barrels – £40')">
+          <span>Barrels</span><strong>£40</strong>
+        </div>
       </div>
 
     </div>
@@ -91,6 +115,7 @@
   <!-- GALLERY -->
   <section class="gallery">
     <h2>Our Work</h2>
+
     <div class="gallery-grid">
       <div class="img-box">
         <img src="galleryimage.jpg" alt="Hair style">
@@ -107,53 +132,21 @@
   <!-- TESTIMONIALS -->
   <section class="testimonials">
     <h2>Client Love</h2>
+
     <div class="testimonial-cards">
       <div class="testimonial">
-        “Always neat, always professional. Best stylist Ive been to.”
-        <span>— Client A</span>
+        “Always neat, always professional. Best stylist I’ve been to.”
       </div>
 
       <div class="testimonial">
         “My go-to for retwists and cornrows. Highly recommend.”
-        <span>— Client B</span>
       </div>
 
       <div class="testimonial">
-        “Attention to detail is unmatched every single time. Book her and thank me later”
-        <span>— Client C</span>
+        “Attention to detail is unmatched every single time.”
       </div>
     </div>
   </section>
-
-  <!-- BOOKING -->
-  <section id="booking" class="booking">
-    <h2>Secure Your Appointment</h2>
-    <p>Limited slots available each week. Dont waste time and book now.</p>
-
-    <a href="https://instagram.com/MBstylesUK" class="btn gold">
-      Book via Instagram
-    </a>
-  </section>
-
-  <!-- STICKY MOBILE BUTTON -->
-  <a href="https://instagram.com/MBstylesUK" class="sticky-book">Book Now</a>
-
-  <form class="booking-form" onsubmit="goToPayPal(event)">
-  <label for="style">Select Your Hairstyle</label>
-
-  <select id="style" required>
-    <option value="">Choose a style</option>
-    <option value="Cornrows">Cornrows</option>
-    <option value="Two Strand Twists">Two Strand Twists</option>
-    <option value="Retwists">Retwists</option>
-    <option value="Interlocking">Interlocking</option>
-    <option value="Barrels">Barrels</option>
-  </select>
-
-  <button type="submit" class="btn gold">
-    Pay Deposit
-  </button>
-</form>
 
   <script src="script.js"></script>
 </body>

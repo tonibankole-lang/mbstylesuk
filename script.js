@@ -22,13 +22,11 @@ window.addEventListener("scroll", () => {
     alert("Please select a hairstyle first.");
     return;
   }
-
-  const paypalLink = "https://www.paypal.com/paypalme/YOURPAYPALLINK/20";
-
+function payDeposit(style) {
+  const paypalLink = "https://www.paypal.me/MBstylesUK/20"; // REPLACE with your real PayPal.Me link
   const note = encodeURIComponent("Hairstyle selected: " + style);
-
   window.location.href = paypalLink + "?note=" + note;
 }
-
+    }
   });
 });
