@@ -3,7 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <title>MBstylesUK | Luxury Hair Styling</title>
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -12,86 +13,93 @@
 <section class="hero">
   <div class="hero-content">
     <h1>MBstylesUK</h1>
-    <p class="tagline">Luxury installs. Flawless finishes.</p>
+    <p class="tagline">Luxury Hairstyles. Flawless finishes.</p>
     <p class="intro">
-      MBstylesUK specialises in braids over locs, natural hairstyles,
-      loc maintenance and protective styling.
+      Specialising in braids over locs, natural hairstyles,
+      retwists, interlocking and barrel styles.
     </p>
+    <a href="#booking" class="btn gold">Book Now</a>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section class="services">
+  <h2>Services</h2>
+  <div class="service-cards">
+    <div class="card">
+      <h3>Barrels</h3>
+      <span>From £40</span>
+    </div>
+    <div class="card">
+      <h3>Retwists</h3>
+      <span>From £35</span>
+    </div>
+    <div class="card">
+      <h3>Cornrows</h3>
+      <span>From £30</span>
+    </div>
   </div>
 </section>
 
 <!-- PRICE LIST -->
 <section class="prices">
-  <h2>Click a Hairstyle to Pay Deposit</h2>
+  <h2>Price List</h2>
 
   <div class="price-wrapper">
 
-    <!-- LEFT COLUMN -->
+    <!-- BRAIDS OVER LOCS -->
     <div class="price-box">
       <h3>Braids Over Locs</h3>
+      <ul>
+        <li data-style="Large locs shoulder £70">Large locs – Shoulder <span>£70</span></li>
+        <li data-style="Large locs mid back £75">Large locs – Mid back <span>£75</span></li>
+        <li data-style="Large locs waist £85">Large locs – Waist <span>£85</span></li>
+        <li data-style="Large locs bum £95">Large locs – Bum <span>£95</span></li>
 
-      <h4>Large Locs (Under 60 locs)</h4>
-      <div class="price-item" onclick="payDeposit('Large braids shoulder £70')"><span>Shoulder length</span><strong>£70</strong></div>
-      <div class="price-item" onclick="payDeposit('Large braids mid back £75')"><span>Mid back length</span><strong>£75</strong></div>
-      <div class="price-item" onclick="payDeposit('Large braids waist £85')"><span>Waist length</span><strong>£85</strong></div>
-      <div class="price-item" onclick="payDeposit('Large braids bum £95')"><span>Bum length</span><strong>£95</strong></div>
+        <li data-style="Small locs smedium shoulder £110">Small locs – Smedium (Shoulder) <span>£110</span></li>
+        <li data-style="Small locs smedium mid back £115">Small locs – Smedium (Mid back) <span>£115</span></li>
+        <li data-style="Small locs smedium waist £125">Small locs – Smedium (Waist) <span>£125</span></li>
+        <li data-style="Small locs smedium bum £140">Small locs – Smedium (Bum) <span>£140</span></li>
+      </ul>
 
-      <p class="addon">Goddess curls +£10 · Boho curls +£10</p>
-
-      <h4>Braids Over Small Locs (100+ locs)</h4>
-
-      <!-- ✅ ONLY NEW ADDITION -->
-      <div class="inline-gallery">
-        <img src="galleryimage3.jpg" alt="Braids over small locs">
-        <img src="galleryimage4.jpg" alt="Braids over small locs">
-      </div>
-      <!-- ✅ END OF ADDITION -->
-
-      <strong>Smedium braids</strong>
-      <div class="price-item" onclick="payDeposit('Smedium braids shoulder £110')"><span>Shoulder</span><strong>£110</strong></div>
-      <div class="price-item" onclick="payDeposit('Smedium braids mid back £115')"><span>Mid back</span><strong>£115</strong></div>
-      <div class="price-item" onclick="payDeposit('Smedium braids waist £125')"><span>Waist</span><strong>£125</strong></div>
-      <div class="price-item" onclick="payDeposit('Smedium braids bum £140')"><span>Bum</span><strong>£140</strong></div>
-
-      <strong>Medium braids</strong>
-      <div class="price-item" onclick="payDeposit('Medium braids shoulder £95')"><span>Shoulder</span><strong>£95</strong></div>
-      <div class="price-item" onclick="payDeposit('Medium braids mid back £105')"><span>Mid back</span><strong>£105</strong></div>
-      <div class="price-item" onclick="payDeposit('Medium braids waist £120')"><span>Waist</span><strong>£120</strong></div>
-      <div class="price-item" onclick="payDeposit('Medium braids bum £130')"><span>Bum</span><strong>£130</strong></div>
-
-      <p class="addon">Goddess curls +£10 · Boho curls +£20</p>
+      <p class="addon">Goddess curls +£10 · Boho curls +£10 / +£20</p>
     </div>
 
-    <!-- RIGHT COLUMN -->
+    <!-- NATURAL & LOC STYLES -->
     <div class="price-box">
       <h3>Natural Hairstyles & Locs</h3>
-
-      <div class="price-item" onclick="payDeposit('2 stitch braids £20')"><span>2 Stitch braids</span><strong>£20</strong></div>
-      <div class="price-item" onclick="payDeposit('4 stitch braids £25')"><span>4 Stitch braids</span><strong>£25</strong></div>
-      <div class="price-item" onclick="payDeposit('6 stitch braids £30')"><span>6 Stitch braids</span><strong>£30</strong></div>
-      <div class="price-item" onclick="payDeposit('8 stitch braids £35')"><span>8 Stitch braids</span><strong>£35</strong></div>
-      <div class="price-item" onclick="payDeposit('10–12 stitch braids £40')"><span>10–12 Stitch braids</span><strong>£40</strong></div>
-
-      <div class="price-item" onclick="payDeposit('Cornrows into twist £35–£40')">
-        <span>Cornrows into twist</span><strong>£35–£40</strong>
-      </div>
-
-      <h4>Locs</h4>
-
-      <div class="price-item" onclick="payDeposit('Retwist under 80 £35')"><span>Retwist under 80 locs</span><strong>£35</strong></div>
-      <div class="price-item" onclick="payDeposit('Retwist 80–100 £40')"><span>Retwist 80–100 locs</span><strong>£40</strong></div>
-      <div class="price-item" onclick="payDeposit('Retwist over 100 £45')"><span>Retwist over 100 locs</span><strong>£45</strong></div>
-
-      <div class="price-item" onclick="payDeposit('Interlocking under 80 £45')"><span>Interlocking under 80</span><strong>£45</strong></div>
-      <div class="price-item" onclick="payDeposit('Interlocking 80–100 £55')"><span>Interlocking 80–100</span><strong>£55</strong></div>
-      <div class="price-item" onclick="payDeposit('Interlocking over 100 £60')"><span>Interlocking over 100</span><strong>£60</strong></div>
-
-      <div class="price-item" onclick="payDeposit('Starter locs from £45')"><span>Starter locs</span><strong>£45+</strong></div>
-      <div class="price-item" onclick="payDeposit('Two strand twists £40')"><span>Two strand twists</span><strong>£40</strong></div>
-      <div class="price-item" onclick="payDeposit('Barrels £40')"><span>Barrels</span><strong>£40</strong></div>
+      <ul>
+        <li data-style="Stitch braids £20–£40">Stitch braids <span>£20–£40</span></li>
+        <li data-style="Cornrows £30">Cornrows <span>£30</span></li>
+        <li data-style="Cornrows into twists £35–£40">Cornrows into twists <span>£35–£40</span></li>
+        <li data-style="Two strand twists £40">Two strand twists <span>£40</span></li>
+        <li data-style="Twists £35">Twists <span>£35</span></li>
+        <li data-style="Retwist £35–£45">Retwist <span>£35–£45</span></li>
+        <li data-style="Interlocking £45–£60">Interlocking <span>£45–£60</span></li>
+        <li data-style="Starter locs from £45">Starter locs <span>From £45</span></li>
+        <li data-style="Barrel styles £40">Barrel styles <span>£40</span></li>
+        <li data-style="Barrels into twists £40">Barrels into twists <span>£40</span></li>
+      </ul>
     </div>
 
   </div>
+</section>
+
+<!-- ✅ IMAGE GALLERY (UNDER PRICE LIST, NOT IN BOXES) -->
+<section class="gallery">
+  <h2>Our Work</h2>
+  <div class="gallery-grid">
+    <img src="galleryimage.jpg" alt="Hair style">
+    <img src="galleryimage2.jpg" alt="Hair style">
+    <img src="galleryimage3.jpg" alt="Braids over locs">
+    <img src="galleryimage4.jpg" alt="Braids over locs">
+  </div>
+</section>
+
+<!-- BOOKING -->
+<section id="booking" class="booking">
+  <h2>Secure Your Appointment</h2>
+  <a href="https://instagram.com/MBstylesUK" class="btn gold">Book via Instagram</a>
 </section>
 
 <script src="script.js"></script>

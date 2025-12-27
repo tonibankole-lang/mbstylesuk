@@ -13,21 +13,14 @@ window.addEventListener("scroll", () => {
       section.style.transform = "translateY(0)";
       section.style.transition = "0.8s ease";
     }
-    function goToPayPal(event) {
-  event.preventDefault();
+const PAYPAL_LINK = "https://www.paypal.me/YOURPAYPAL/20";
 
-  const style = document.getElementById("style").value;
-
-  if (!style) {
-    alert("Please select a hairstyle first.");
-    return;
-  }
-function payDeposit(style) {
-  const paypalLink = "https://www.paypal.me/MBstylesUK/20"; // replace with your PayPal.Me username
-  const note = encodeURIComponent("Style booked: " + style);
-  window.location.href = paypalLink + "?note=" + note;
-}
-
-    }
+document.querySelectorAll("[data-style]").forEach(item => {
+  item.addEventListener("click", () => {
+    const style = item.getAttribute("data-style");
+    window.location.href =
+      PAYPAL_LINK + "?note=" + encodeURIComponent("Style booked: " + style);
+  });
+});
   });
 });
