@@ -23,10 +23,11 @@ window.addEventListener("scroll", () => {
     return;
   }
 function payDeposit(style) {
-  const paypalLink = "https://www.paypal.me/MBstylesUK/20";
+  const paypalLink = "https://www.paypal.me/MBstylesUK/20"; // replace with your PayPal.Me username
   const note = encodeURIComponent("Style booked: " + style);
   window.location.href = paypalLink + "?note=" + note;
 }
+
     }
   });
 });
